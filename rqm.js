@@ -1,6 +1,6 @@
 function App() {
 
-    const api_url = "http://api.quotable.io/quotes?limit=150";
+    const api_url = "https://api.quotable.io/quotes?limit=150";
 
     const [quotes, setQuotes] = React.useState([]);
     const [randomQuote, setRandomQuotes] = React.useState("");
@@ -62,7 +62,7 @@ function App() {
                                 <a href={"https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + encodeURIComponent(
                                     '"' + randomQuote.content + '" ' + randomQuote.author
                                 )} className="btn btn-primary" target="_blank">
-                                    <i class="fa fa-twitter"></i>
+                                    <i className="fa fa-twitter"></i>
                                 </a>
                             </div>
                         </div>
